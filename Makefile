@@ -18,7 +18,7 @@ kmain.o
 all: os.iso
 %.o: %.c
 	# Compile c files with gcc
-	$(GCC) $(CFLAGS)  $< -o $@
+	~/i686-x0r3d-elf/bin/i686-x0r3d-elf-gcc $(CFLAGS)  $< -o $@
 %.o: %.s
 	# assemble s files with nasm
 	$(NASM) $(ASFLAGS) $< -o $@
