@@ -159,12 +159,7 @@ static char *welcome_string = ""
 "                                                                                "
 "                                                                                "
 "                                                                                "
-"                                                                                "
-"                              | |                  | |                          "
-"                   ___   ___  | |_    __ _    ___  | | __                       "
-"                  / __| / __| | __|  / _` |  / __| | |/ /                       "
-"                 | (__  \\__ \\ | |_  | (_| | | (__  |   <                        "
-"                  \\___| |___/  \\__|  \\__,_|  \\___| |_|\\_\\                       "
+"                                                                                "                      "
 "                                                                                "
 "                                                                                "
 "                             ____     _____                                     "
@@ -180,8 +175,7 @@ static char *welcome_string = ""
 "                                                                                "
 "                                                                                "
 "                                                                                "
-"                                                                                "
-"";
+"                                                                                ";
 
 void kmain() {
   clear_screen();
@@ -206,6 +200,7 @@ void kmain() {
     char keycode = fetch_key();
     if (keycode != 0 && keycode < sizeof(keycode_map)) {
       serial_write_byte(SERIAL_COM1_BASE, keycode_map[keycode]);
+      printf(keycode_map[keycode]);
     }
   }
 
