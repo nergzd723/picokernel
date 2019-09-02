@@ -155,27 +155,7 @@ char fetch_key(void) {
   }
 }
 
-static char *welcome_string = ""
-"                                                                                "
-"                                                                                "
-"                                                                                "
-"                                                                                "                      "
-"                                                                                "
-"                                                                                "
-"                             ____     _____                                     "
-"                            / __ \\   / ____|                                    "
-"                           | |  | | | (___                                      "
-"                           | |  | |  \\___ \\                                     "
-"                           | |__| |  ____) |                                    "
-"                            \\____/  |_____/                                     "
-"                                                                                "
-"                                                                                "
-"                                                                                "
-"                                                                                "
-"                                                                                "
-"                                                                                "
-"                                                                                "
-"                                                                                ";
+static char *welcome_string = "Hello World!";
 
 void kmain() {
   clear_screen();
