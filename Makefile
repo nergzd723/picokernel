@@ -22,7 +22,7 @@ all: os.iso
 	# assemble s files with nasm
 	$(NASM) $(ASFLAGS) $< -o $@
 kernel.elf: $(OBJECTS)
-	$(LD) -T link.ld -melf_i386 $(OBJECTS) -o kernel.elf # Link to make an executable for the kernel.
+	~/i686-x0r3d-elf/bin/i686-x0r3d-elf-gcc -T -o picokernel.bin -ffreestanding -O2 -nostdlib $(OBJECTS) -lgcc
 os.iso: kernel.elf
 	mkdir -p iso/boot/grub              # create the folder structure
 	cp stage2_eltorito iso/boot/grub/   # copy the bootloader
