@@ -1,5 +1,3 @@
-#ifndef INCLUDE_ASSEMBLY_INTERFACE_H
-#define INCLUDE_ASSEMBLY_INTERFACE_H
 
 /** outb:
  *  Sends the given data to the given I/O port. Defined in io.s
@@ -32,4 +30,3 @@ void lgdt(void * gdt);
  */
 void load_idt(void * idt);
 
-#endif /* INCLUDE_ASSEMBLY_INTERFACE_H */
