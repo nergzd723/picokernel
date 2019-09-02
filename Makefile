@@ -1,6 +1,6 @@
 NASM=nasm
 GCC=gcc
-CFLAGS = -std=gnu99 -ffreestanding -O2 -Wall -Wextra 
+CFLAGS = -std=gnu99 -ffreestanding -O2 -Wall -Wextra -Iinclude
 ASFLAGS = -f elf
 OBJECTS = loader.o \
 frame_buffer.o \
