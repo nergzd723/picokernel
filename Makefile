@@ -1,9 +1,4 @@
 NASM=nasm
-# https://en.wikipedia.org/wiki/GNU_linker
-LD=~/.local/binutils/bin/i386-unkown-linux-gnu-ld
-# https://en.wikipedia.org/wiki/QEMU
-# Virtual machine
-QEMU=qemu-system-i386
 GCC=gcc
 CFLAGS = -std=gnu99 -ffreestanding -O2 -Wall -Wextra 
 ASFLAGS = -f elf
