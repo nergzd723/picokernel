@@ -17,4 +17,4 @@ all:
 	~/i686-x0r3d-elf/bin/i686-x0r3d-elf-gcc -c frame_buffer.c -o frame_buffer.o $(CFLAGS)
 	~/i686-x0r3d-elf/bin/i686-x0r3d-elf-gcc -c serial_port.c -o serial_port.o $(CFLAGS)
 	~/i686-x0r3d-elf/bin/i686-x0r3d-elf-gcc -c kmain.c -o kmain.o $(CFLAGS)
-	~/i686-x0r3d-elf/bin/i686-x0r3d-elf-gcc -T -o picokernel.bin -ffreestanding -O2 -nostdlib $(OBJECTS) -lgcc
+	~/i686-x0r3d-elf/bin/i686-x0r3d-elf-gcc -T link.ld -o picokernel.bin -ffreestanding -O2 -nostdlib $(OBJECTS) -lgcc
