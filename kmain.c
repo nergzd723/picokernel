@@ -4,6 +4,7 @@
 #include "serial_port.h"
 #include "interrupts.h"
 #include "types.h"
+#include "pic.h"
 
 enum output_t {SCREEN, LOG};
 
