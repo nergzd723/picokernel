@@ -176,7 +176,8 @@ void kmain() {
 
   // serial_write_bytes(SERIAL_COM1_BASE, (char *) idt, sizeof(idt));
   move_cursor(17, 0);
-
+  i = i / 0;
+  printf("Hi");
   // Loop forever
   // TODO: accept user input
   while(1) {};
