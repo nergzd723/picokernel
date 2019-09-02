@@ -1,6 +1,6 @@
 #include "pic.h"
 
-#include "../assembly_interface.h"
+#include "assembly_interface.h"
 
 /* reinitialize the PIC controllers, giving them specified vector offsets
    rather than 8h and 70h, as configured by default */
