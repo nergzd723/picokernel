@@ -5,8 +5,7 @@ LD=~/.local/binutils/bin/i386-unkown-linux-gnu-ld
 # Virtual machine
 QEMU=qemu-system-i386
 GCC=gcc
-CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector \
-         -Wall -Wextra -Werror -c --target=x86_64-elf
+CFLAGS = -std=gnu99 -ffreestanding -O2 -Wall -Wextra 
 ASFLAGS = -f elf
 OBJECTS = loader.o \
 frame_buffer.o \
