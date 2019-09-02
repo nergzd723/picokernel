@@ -175,16 +175,6 @@ void kmain() {
   // log("Initialized Programmable Interrupt Controller.\n");
 
   // serial_write_bytes(SERIAL_COM1_BASE, (char *) idt, sizeof(idt));
-
-  while (1) {
-    char keycode = fetch_key();
-    if (keycode != 0 && keycode < sizeof(keycode_map)) {
-      serial_write_byte(SERIAL_COM1_BASE, keycode_map[keycode]);
-      printf(keycode_map[keycode]);
-    }
-  }
-
-
   move_cursor(17, 0);
 
   // Loop forever
