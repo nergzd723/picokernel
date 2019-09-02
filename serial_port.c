@@ -1,8 +1,8 @@
 // https://en.wikipedia.org/wiki/Serial_port
 
 #include "serial_port.h"
-#include "../assembly_interface.h"
-#include "../types.h"
+#include "assembly_interface.h"
+#include "types.h"
 
 /* The I/O ports */
 
