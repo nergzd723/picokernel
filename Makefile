@@ -9,9 +9,9 @@ CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector \
          -Wall -Wextra -Werror -c --target=x86_64-elf
 ASFLAGS = -f elf
 OBJECTS = loader.o \
-drivers/frame_buffer.o \
-drivers/pic.o \
-drivers/serial_port.o \
+frame_buffer.o \
+pic.o \
+serial_port.o \
 assembly_interface.o \
 interrupts.o \
 kmain.o
